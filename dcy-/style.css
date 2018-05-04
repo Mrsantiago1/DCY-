@@ -1,0 +1,125 @@
+.container{
+  background-color: #dcdcc6;
+  width: 100%;
+  align-items: center;
+}
+img{
+  align-items: baseline;
+  height: 500px;
+  width: 1000px;
+  display: block;
+  margin: 0 auto;
+}
+header{
+  background-color: #006A6A;
+  height: 80px;
+  width: 100%;
+  color: white;
+}
+.logo{
+  padding: 0;
+  height: 75%;
+  width: 10%;
+  margin: 10px 0px 0px 10px;
+}
+h2{
+  font-family: sans-serif;
+}
+p{
+  font-family: century;
+  color: black;
+  margin: 50px 20% 0px 20%;
+  text-align: left;
+  font-size: 24px;
+}
+button{
+  margin: 5% 0% 0% 12%;
+  border: none;
+  color: white;
+  background-color: #006A6A;
+  font-family: sans-serif;
+}
+li{
+  font-size: 12px;
+  display: inline-flex;
+  text-decoration: none;
+  margin-left: 30%;
+}
+.headList{
+  margin-top: 0;
+  display: inline-flex;
+  text-decoration: none;
+  margin-left: 40%;
+}
+.upTop{
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  /* background-image: url(first slot.png);
+  background-size: cover; */
+}
+.first{
+  height: 500px;
+  width: 100%;
+}
+.about{
+  margin-top: 150px;
+  text-align: left;
+  line-height: 1.5;
+}
+.a{
+  font-size: 20px;
+}
+.why {
+  margin-top: 200px;
+}
+.about,.resources,.why{
+  border: solid black 1px;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  border: 1px;
+  display: table;
+  background-attachment: fixed;
+}
+.picSlotA{
+  font-family: sans-serif;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url(battle.jpg);
+}
+.picSlot{
+  height: 500px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  /* background-image: url(slotd.png);
+  background-size: cover;
+  background-attachment: fixed; */
+}
+.picSlotC{
+  height: 100vh;
+  width: 100%;
+  background-image: url(communications.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: none;
+}
+.bruh{
+  background-color: rgba(255,255,255,0.7);
+  padding:30px;
+}
+.lilPics{
+  background-color: none;
+  height: 300px;
+  width: 200px;
+}
+footer{
+  margin-top: 10%;
+  text-align: center;
+}

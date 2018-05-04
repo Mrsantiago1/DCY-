@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>DCY's Universal blog</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    <div class="page-header text-center">
+        <h1> Welcome to DCY's Universal blog</h1>
+        <img src="img/peace.png" alt="">
+    </div>
+
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                <% if (user.local.email) { %>
+                    <p>
+                        <strong>id</strong>: <%= user._id %><br>
+                        <strong>username</strong>: <%= user.local.email %><br>
+                        <strong>password</strong>: <%= user.local.password %>
+                    </p>
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+                <% } else { %>
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+                <% } %>
+
+            </div>
+        </div>
+        <div class="col-sm-6">
+          <h3>This is a safe space to express how you're genuinely feeling, its completely anonymous</h3>
+          <span class="lil">all negative comments will be deleted!</span>
+          <ul class="help">
+          <% for(var i=0; i<help.length; i++) {%>
+            <li class="message">
+              <span><%= help[i].name %></span>
+              <span><%= help[i].msg %></span>
+            </li>
+          <% } %>
+          </ul>
+
+          <h2>Blog your post</h2>
+        <% if (user.local.email) { %>
+          <form action="/help" method="POST">
+            <input name="name" type="text" value="<%= user.local.email %>" >
+            <!-- <input type="text" placeholder="message" name="msg"> -->
+            <textarea name="msg" placeholder="How are you feeling today?" rows="7" cols="40"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+
+
+
+<script src="main.js"></script>
+
+</body>
+</html>
