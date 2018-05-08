@@ -1,2 +1,4 @@
 # DCY-
-mental health awareness application using HTML, CSS, javascript, node.js, express frameworks and MongoDB
+1. go to the auth file
+2. npm install in your terminal
+3. Run node server.js then navigate to port 8080
